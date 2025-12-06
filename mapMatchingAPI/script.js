@@ -1,6 +1,6 @@
 
 // Add your Mapbox access token
-mapboxgl.accessToken = 'pk.eyJ1IjoieWFtaW5pLW1hbmRhZGkiLCJhIjoiY21pcnplMjEwMHh4MjNkcHdhN3l5amZnaCJ9.jribJH1wYoyGOri34V21pg ';
+mapboxgl.accessToken = 'Access Token';
 const map = new mapboxgl.Map({
         container: 'map1', // Specify the container ID
         style:'mapbox://styles/mapbox/streets-v12', // Specify which map style to use
