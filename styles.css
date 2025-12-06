@@ -1,0 +1,25 @@
+body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .info-box {
+  position: absolute;
+  margin: 20px;
+  width: 25%;
+  top: 0;
+  bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+body { margin: 0; padding: 0; }
+h1 {font-family:'Noto Sans JP', sans-serif;}
+#map { height:500px; margin-bottom:50px; }
