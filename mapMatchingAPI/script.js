@@ -1,12 +1,13 @@
 
 // Add your Mapbox access token
-mapboxgl.accessToken = 'Access Token';
+mapboxgl.accessToken = 'pk.eyJ1IjoieWFtaW5pLW1hbmRhZGkiLCJhIjoiY21pcnplMjEwMHh4MjNkcHdhN3l5amZnaCJ9.jribJH1wYoyGOri34V21pg ';
 const map = new mapboxgl.Map({
         container: 'map1', // Specify the container ID
         style:'mapbox://styles/mapbox/streets-v12', // Specify which map style to use
-        center: [-118.243683, 34.052235], // Specify the starting position
-        zoom: 14.5 // Specify the starting zoom
+        center: [-118.243683, 34.052235], // USA center-[long,lat]
+        zoom: 14 // Specify the starting zoom
   });
+  
 const draw = new MapboxDraw({
         // Instead of showing all the draw tools, show only the line string and delete tools.
         displayControlsDefault: false,
@@ -24,13 +25,13 @@ const draw = new MapboxDraw({
             filter: ['all', ['==', '$type', 'LineString'], ['!=', 'mode', 'static']],
             layout: {
               'line-cap': 'round',
-              'line-join': 'round'
+              'line-join': 'bevel'
             },
             paint: {
               'line-color': '#438EE4',
               'line-dasharray': [0.2, 2],
               'line-width': 4,
-              'line-opacity': 0.7
+              'line-opacity': 0.9
             }
           },
           // Style the vertex point halos.
@@ -44,7 +45,7 @@ const draw = new MapboxDraw({
               ['!=', 'mode', 'static']
             ],
             paint: {
-              'circle-radius': 12,
+              'circle-radius': 9,
               'circle-color': '#FFF'
             }
           },
@@ -66,10 +67,10 @@ const draw = new MapboxDraw({
         ]
   });
 
-// Add the draw tool to the map.
+
 map.addControl(draw);
 
-    // Use the coordinates you drew to make the Map Matching API request
+// Use the coordinates you drew to make the Map Matching API request
 function updateRoute() {
           // Set the profile
           const profile = 'driving';
