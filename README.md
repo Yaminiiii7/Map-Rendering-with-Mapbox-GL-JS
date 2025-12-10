@@ -9,6 +9,7 @@ This repository contains two independent Mapbox-based web demos built using **Ma
 ```
 /
 ├── customisedMap/        # Demo using a custom Mapbox style
+├── localSearch/       # Demo using the Search js
 ├── mapMatchingAPI/       # Demo using the Mapbox Map Matching API
 └── styles.css            # Shared styling for both demos
 ```
