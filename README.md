@@ -34,12 +34,11 @@ customisedMap/index.html
 ```
 mapMatchingAPI/index.html
 ```
+### **Local Search**
+```
+localSearch/index.html
+```
 
-⚠️ **Note:**  
-Mapbox may block loading resources when using `file://` paths, so maps might not display correctly.  
-If the map doesn't load → use Option 2 below.
-
----
 
 ## 🔹 Option 2 — Run Using a Local Server (Recommended)
 
